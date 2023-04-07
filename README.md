@@ -19,3 +19,14 @@ Feel free to contribute PRs to update the list!
 |                   |                 | Python                                                                                               | [HyperSpy](http://hyperspy.org/hyperspy-doc/current/user_guide/io.html)                                                                                                                                                                                                    |                                                                                                                                                                                                                              |
 |                   |                 | [DigitalMicrograph/GMS](https://www.gatan.com/products/tem-analysis/gatan-microscopy-suite-software) | Built-in reader                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                              |
 | bcf               | Bruker (Esprit) | Python                                                                                               | [HyperSpy](http://hyperspy.org/hyperspy-doc/current/user_guide/io.html)                                                                                                                                                                                                    | Only EDS data, no EBSD.                                                                                                                                                                                                      |
+# Workflows and other tips
+
+#### TIA .emi/.ser EELS/EDS Spectrum Image to DigitalMicrograph  
+FEI/TFS microscopes without DigiScan acquire spectrum images (SIs) through the microscope interface (*Experiments* tab).  
+DigitalMicrograph offers a nice GUI for processing the data, e.g., [NLLS fitting of ELNES](https://www.youtube.com/watch?v=bYnN0DaRMaI) features.  
+To transfer the SI data:
+  - Load .emi/.ser SI data into HyperSpy
+  - Save as .rpl/.raw files
+  - Use [ImportRPL](https://github.com/hyperspy/ImportRPL) plugin to load .rpl/.raw data into DM  
+
+A notebook (STEM-SI-Converter) can be downloaded [here](https://publikationen.bibliothek.kit.edu/1000144208).
