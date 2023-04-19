@@ -1,4 +1,4 @@
-# Electron Microscopy Image Readers
+# Electron Microscopy File Readers
 
 This is a (non-exhaustive) list of freely available software for reading and handling different vendor file formats in electron microscopy.
 
